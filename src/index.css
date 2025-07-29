@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Premium Tambul Brand Colors */
+    --background: 35 20% 98%;
+    --foreground: 140 30% 15%;
+
+    --card: 35 30% 96%;
+    --card-foreground: 140 30% 15%;
+
+    --popover: 35 30% 96%;
+    --popover-foreground: 140 30% 15%;
+
+    /* Warm Green Primary */
+    --primary: 140 40% 25%;
+    --primary-foreground: 35 20% 98%;
+
+    /* Soft Gold Secondary */
+    --secondary: 45 60% 85%;
+    --secondary-foreground: 140 30% 15%;
+
+    /* Muted Greens */
+    --muted: 140 20% 90%;
+    --muted-foreground: 140 15% 45%;
+
+    /* Warm Gold Accent */
+    --accent: 45 70% 75%;
+    --accent-foreground: 140 30% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 35 20% 98%;
+
+    --border: 140 20% 85%;
+    --input: 140 20% 90%;
+    --ring: 140 40% 25%;
+
+    /* Premium Design Tokens */
+    --gold-shimmer: 45 80% 70%;
+    --fresh-green: 120 50% 40%;
+    --traditional-green: 140 60% 20%;
+    --warm-cream: 35 40% 95%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(140 60% 20% / 0.8), hsl(140 40% 25% / 0.9));
+    --gradient-gold: linear-gradient(45deg, hsl(45 70% 75%), hsl(45 60% 85%));
+    --gradient-green: linear-gradient(180deg, hsl(140 50% 40%), hsl(140 40% 25%));
+    
+    /* Shadows */
+    --shadow-premium: 0 10px 40px -10px hsl(140 40% 25% / 0.2);
+    --shadow-gold: 0 4px 20px hsl(45 70% 75% / 0.3);
+    --shadow-soft: 0 2px 8px hsl(140 20% 80% / 0.3);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Tambul Brand Components */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .gold-gradient {
+    background: var(--gradient-gold);
+  }
+  
+  .green-gradient {
+    background: var(--gradient-green);
+  }
+  
+  .shimmer-effect {
+    background: linear-gradient(90deg, transparent, hsl(var(--gold-shimmer) / 0.6), transparent);
+    animation: shimmer 2s infinite;
+  }
+  
+  .float-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  .premium-shadow {
+    box-shadow: var(--shadow-premium);
+  }
+  
+  .gold-shadow {
+    box-shadow: var(--shadow-gold);
+  }
+  
+  .soft-shadow {
+    box-shadow: var(--shadow-soft);
+  }
+}
+
+@layer utilities {
+  .text-traditional-green {
+    color: hsl(var(--traditional-green));
+  }
+  
+  .text-fresh-green {
+    color: hsl(var(--fresh-green));
+  }
+  
+  .text-gold-shimmer {
+    color: hsl(var(--gold-shimmer));
+  }
+  
+  .bg-warm-cream {
+    background-color: hsl(var(--warm-cream));
+  }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll triggered animations */
+.scroll-fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--fresh-green));
+}
