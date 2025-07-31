@@ -5,7 +5,7 @@ import tambulLogo from "@/assets/tambul-logo.png";
 
 const HeroSection = () => {
   const handleWhatsAppOrder = () => {
-    window.open("https://wa.me/919876543210?text=Hi! I'd like to order fresh Tambul from House of Tambul 🍃", "_blank");
+    window.open("https://wa.me/919923573675?text=Hi! I'd like to order fresh Tambul from House of Tambul 🍃", "_blank");
   };
 
   return (

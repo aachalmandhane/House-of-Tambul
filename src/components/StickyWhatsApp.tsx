@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 
 const StickyWhatsApp = () => {
   const handleWhatsAppOrder = () => {
-    window.open("https://wa.me/919876543210?text=Hi! I'd like to order fresh Tambul from House of Tambul 🍃", "_blank");
+    window.open("https://wa.me/919923573675?text=Hi! I'd like to order fresh Tambul from House of Tambul 🍃", "_blank");
   };
 
   return (
@@ -12,10 +12,10 @@ const StickyWhatsApp = () => {
         variant="whatsapp"
         size="lg"
         onClick={handleWhatsAppOrder}
-        className="rounded-full w-16 h-16 p-0 shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 animate-pulse"
+        className="rounded-full w-16 h-16 p-0 shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300"
       >
         <MessageCircle className="w-8 h-8" />
-        <div className="absolute inset-0 shimmer-effect rounded-full" />
+       
       </Button>
       
       {/* Order Now Text */}

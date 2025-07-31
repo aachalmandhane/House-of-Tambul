@@ -3,6 +3,11 @@ import paanPreparation from "@/assets/paan-preparation.jpg";
 import finishedPaan from "@/assets/finished-paan.jpg";
 import ingredients from "@/assets/ingredients.jpg";
 import freshLeaves from "@/assets/fresh-leaves.jpg";
+import t1 from "@/assets/T1.jpg";
+import t2 from "@/assets/T2.jpg";
+import t3 from "@/assets/T3.jpg";
+import t4 from "@/assets/T4 (1).jpg";
+
 
 const GallerySection = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -27,7 +32,29 @@ const GallerySection = () => {
       image: freshLeaves,
       title: "Farm Fresh Leaves",
       description: "Sourced directly from organic farms"
-    }
+    },
+
+    {
+  image: t1,
+  title: "Aesthetic Display",
+  description: "Our tambul served fresh with natural elegance"
+},
+{
+  image: t2,
+  title: "Floral Touch",
+  description: "A vibrant setting to enhance every bite"
+},
+{
+  image: t3,
+  title: "Leaf Freshness",
+  description: "Served on organic leaves for traditional purity"
+},
+{
+  image: t4,
+  title: "Festive Delight",
+  description: "Perfect for gifting and festive moments"
+}
+
   ];
 
   return (
