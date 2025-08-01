@@ -43,7 +43,7 @@ const HeroSection = () => {
         
         {/* Subheading */}
         <p className="font-inter text-xl md:text-2xl text-warm-cream mb-8 fade-in-up max-w-2xl mx-auto leading-relaxed">
-          Fresh, homemade Masala Paan Tambul made with love & tradition 🍃
+          Fresh, Homemade Masala Paan Tambul made with Love & Tradition 🍃
         </p>
         
         {/* CTA Button */}

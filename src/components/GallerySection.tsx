@@ -1,38 +1,15 @@
 import { useState } from "react";
-import paanPreparation from "@/assets/paan-preparation.jpg";
-import finishedPaan from "@/assets/finished-paan.jpg";
-import ingredients from "@/assets/ingredients.jpg";
-import freshLeaves from "@/assets/fresh-leaves.jpg";
 import t1 from "@/assets/T1.jpg";
 import t2 from "@/assets/T2.jpg";
 import t3 from "@/assets/T3.jpg";
 import t4 from "@/assets/T4 (1).jpg";
 
 
+
 const GallerySection = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const galleryItems = [
-    {
-      image: paanPreparation,
-      title: "Handcrafted with Care",
-      description: "Each paan is carefully prepared by skilled hands"
-    },
-    {
-      image: finishedPaan,
-      title: "Premium Presentation",
-      description: "Beautiful finishing with traditional garnish"
-    },
-    {
-      image: ingredients,
-      title: "Natural Ingredients",
-      description: "Only the finest, freshest ingredients"
-    },
-    {
-      image: freshLeaves,
-      title: "Farm Fresh Leaves",
-      description: "Sourced directly from organic farms"
-    },
 
     {
   image: t1,
@@ -53,7 +30,7 @@ const GallerySection = () => {
   image: t4,
   title: "Festive Delight",
   description: "Perfect for gifting and festive moments"
-}
+},
 
   ];
 
@@ -66,7 +43,9 @@ const GallerySection = () => {
             🍃 Our Tambul in Pictures
           </h2>
           <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto">
-            See the love and tradition that goes into every piece of our handmade tambul
+            See the love and tradition that goes into every pack of our handmade tambul 
+            Avaliable in Multiple Flavours
+
           </p>
         </div>
 

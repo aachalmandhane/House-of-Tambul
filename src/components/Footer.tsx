@@ -27,7 +27,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="mb-6 space-y-2">
             <p className="font-inter text-sm opacity-80">
-              📞 +91 98765 43210 | 📧 hello@houseoftambul.com
+              📞 +91 99235 73675 | 📧 Houseoftambul@gmail.com
             </p>
             <p className="font-inter text-sm opacity-80">
               🍃 Fresh • Natural • Traditional

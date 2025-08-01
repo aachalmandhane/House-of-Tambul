@@ -5,28 +5,28 @@ const RateCard = () => {
   const packages = [
     {
       weight: "100g",
-      price: "₹150",
-      description: "Perfect for trying",
+      price: "₹99",
+      description: "Perfect for try out",
       popular: false,
       icon: Package,
     },
     {
       weight: "200g",
-      price: "₹280",
+      price: "₹198",
       description: "Family sharing",
       popular: true,
       icon: Package,
     },
     {
       weight: "500g",
-      price: "₹650",
+      price: "₹495",
       description: "Party special",
       popular: false,
       icon: Package,
     },
     {
       weight: "1000g",
-      price: "₹1200",
+      price: "₹990",
       description: "Bulk order",
       popular: false,
       icon: Package,
